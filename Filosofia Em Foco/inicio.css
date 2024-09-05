@@ -1,0 +1,225 @@
+*{
+       margin: 0;
+       padding: 0;
+       outline: 0;
+       box-sizing: border-box;
+       font-family: "Poppins", sans-serif;
+       font-size: 16px;
+       font-weight: 400;
+}
+
+body{
+       display: flex;
+       justify-content: left;
+       align-items: center;
+       min-height: 100vh;
+       background: #fff;
+       padding: auto ;
+}
+
+.navegation{
+       position: relative;
+       height: 1000px;
+       top: 0;
+       left: 0;
+       background-color: #e1dede; 
+       width: 200px;
+       box-shadow: 10px 0 0 rgb(115, 10, 160); 
+       border-left: 10px solid #e1dede;
+       overflow-x: hidden;
+       transition: 0.5s;
+       padding: 100px;
+  }
+
+.navegation:hover{
+       width: 300px;
+}
+
+.navegation ul{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       padding-left: 5px;
+       padding-top: 40px;
+}
+
+.navegation ul li{
+       position: relative;
+       list-style: none;
+       width: 100%;
+       border-top-left-radius: 20px;
+       border-bottom-left-radius: 20px;
+}
+
+.navegation ul li a{
+       position: relative;
+       display: flex;
+       width: 100%;
+       text-decoration: none;
+       color: #000;
+}
+
+.navegation ul li a .icon{
+       position: relative;
+       display: block;
+       min-width: 65px;
+       height: 65px;
+       text-align: center;
+       line-height: 70px;
+}
+
+.navegation ul li a .icon ion-icon{
+       position: relative;
+       font-size: 1.5rem;
+       z-index: 1;
+}
+
+.navegation ul li a .title{
+       position: relative;
+       display: block;
+       padding-left: 10px;
+       height: 60px;
+       line-height: 60px;
+       white-space: nowrap;
+}
+
+.navegation ul li.active{
+       background: rgb(115, 10, 160);
+}
+.navegation ul li.active a::before{
+       content: '';
+       position: absolute;
+       top: -24px;
+       right: 0;
+       width: 24px;
+       height: 24px;
+       background: #e1dede;
+       border-radius: 50%;
+       box-shadow: 15px 15px 0 rgb(115, 10, 160);
+}
+
+.navegation ul li.active a::after{
+       content: '';
+       position: absolute;
+       bottom: -24px;
+       right: 0;
+       width: 24px;
+       height: 24px;
+       background: #e1dede;
+       border-radius: 50%;
+       box-shadow: 15px -15px 0 rgb(115, 10, 160);
+}
+
+.timeline{
+       position: relative;
+       margin: 50px auto;
+       padding: 40px 0;
+       width: 1000px;
+
+}
+
+.timeline::before{
+       content: '';
+       position: absolute;
+       left: 50%;
+       width: 2px;
+       height: 100%;
+       background: #000;
+}
+
+.timeline ul{
+       margin: 0;
+       padding: 0;
+}
+
+.timeline ul li{
+       list-style: none;
+       position: relative;
+       width: 50%;
+       padding: 20px 40px;
+       box-sizing: border-box;
+       
+}
+
+.timeline ul li:nth-child(odd){
+       float: left;
+       text-align: right;
+       clear: both;
+}
+
+.timeline ul li:nth-child(even){
+       float: right;
+       text-align: left;
+       clear: both;
+}
+
+.content{
+       padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd)::before{
+       content: '';
+       position: absolute;
+       top: 24px;
+       right: -6px;
+       width: 10px;
+       height: 10px;
+       background: rgb(74, 21, 128);
+       border-radius: 50%;
+       box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+.timeline ul li:nth-child(even)::before{
+       content: '';
+       position: absolute;
+       top: 24px;
+       left: -6px;
+       width: 10px;
+       height: 10px;
+       background: rgb(74, 21, 128);
+       border-radius: 50%;
+       box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+.timeline ul li h3{
+       margin: 0;
+       padding: 0;
+       font-weight: 600;
+       color: rgb(74, 21, 128);
+}
+
+.timeline ul li p{
+       margin: 10px 0 0;
+       padding: 0;
+}
+
+.timeline ul li .time h4{
+       margin: 0;
+       padding: 0;
+       font-size: 14px;
+}
+
+.timeline ul li:nth-child(odd) .time{
+       position: absolute;
+       top: 12px;
+       right: -165px;
+       margin: 0;
+       padding: 8px 16px;
+       background: rgb(74, 21, 128);
+       color: #fff;
+       border-radius: 18px;
+       box-shadow: 0 0 0 3px rgb(74, 21, 128);
+}
+
+.timeline ul li:nth-child(even) .time{
+       position: absolute;
+       top: 12px;
+       left: -165px;
+       margin: 0;
+       padding: 8px 16px;
+       background: rgb(74, 21, 128);
+       color: #fff;
+       border-radius: 18px;
+       box-shadow: 0 0 0 3px rgb(74, 21, 128);
+}

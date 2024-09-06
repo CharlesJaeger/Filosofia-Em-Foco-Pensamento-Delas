@@ -1,0 +1,118 @@
+*{
+       margin: 0;
+       padding: 0;
+       outline: 0;
+       box-sizing: border-box;
+       font-family: "Poppins", sans-serif;
+       font-size: 16px;
+       font-weight: 400;
+}
+
+body{
+       background-image: url(image.png);
+       background-size: cover;
+}
+
+section{
+       position: relative;
+       width: 100%;
+       min-height: 100vh;
+       padding: 100px;
+       background-size: cover;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       overflow: hidden;
+}
+
+header{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       padding: 40px 100px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+}
+
+header .logo{
+       position: relative;
+       max-height: 160px;
+}
+
+
+header .navegation ul{
+       position: relative;
+       display: flex;
+}
+
+header .navegation li{
+       list-style: none;
+}
+
+header .navegation li a{
+       color: #000;
+       display: inline-block;
+       text-decoration: none;
+       font-weight: 500;
+       font-size: 19px;
+       margin-left: 100px;
+}
+
+footer{
+       width: 100%;
+       min-height: 250px;
+       background: #444;
+       display: flex;
+}
+
+footer.boxs{
+       width: 320px;
+       min-height: 150px;
+       padding: 20px;
+
+}
+
+footer.boxs:nth-child(4){
+       width: 400px;
+}
+
+.boxs h2{
+       color: #fff;
+       margin-bottom: 20px;
+}
+
+.boxs ul li{
+       margin: 10px 0px;
+       list-style: none;
+}
+
+.boxs ul li a{
+       color: #ddd;
+}
+
+.boxs p{
+       color: #fff;
+       text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 950px){
+       footer{
+              width: 100%;
+              min-height: 250px;
+              background: #444;
+              display: flex;
+              flex-direction: column;
+       }
+}

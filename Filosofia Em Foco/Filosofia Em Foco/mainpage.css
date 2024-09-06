@@ -1,0 +1,112 @@
+*{
+       margin: 0;
+       padding: 0;
+       outline: 0;
+       box-sizing: border-box;
+       font-family: "Poppins", sans-serif;
+       font-size: 16px;
+       font-weight: 400;
+}
+
+body{
+       display: flex;
+       justify-content: left;
+       align-items: center;
+       min-height: 100vh;
+       background: #fff;
+       padding: auto ;
+}
+
+.navegation{
+     position: fixed;
+     height: 900px;
+     top: 0;
+     left: 0;
+     background-color: #e1dede; 
+     width: 90px;
+     box-shadow: 10px 0 0 rgb(115, 10, 160); 
+     border-left: 10px solid #e1dede;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding: 10px;
+}
+
+.navegation:hover{
+       width: 300px;
+}
+
+.navegation ul{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       padding-left: 5px;
+       padding-top: 40px;
+}
+
+.navegation ul li{
+       position: relative;
+       list-style: none;
+       width: 100%;
+       border-top-left-radius: 20px;
+       border-bottom-left-radius: 20px;
+}
+
+.navegation ul li a{
+       position: relative;
+       display: flex;
+       width: 100%;
+       text-decoration: none;
+       color: #000;
+}
+
+.navegation ul li a .icon{
+       position: relative;
+       display: block;
+       min-width: 65px;
+       height: 75px;
+       text-align: center;
+       line-height: 70px;
+}
+
+.navegation ul li a .icon ion-icon{
+       position: relative;
+       font-size: 1.5rem;
+       z-index: 1;
+}
+
+.navegation ul li a .title{
+       position: relative;
+       display: block;
+       padding-left: 10px;
+       height: 60px;
+       line-height: 60px;
+       white-space: nowrap;
+}
+
+.navegation ul li.active{
+       background: rgb(115, 10, 160);
+}
+.navegation ul li.active a::before{
+       content: '';
+       position: absolute;
+       top: -24px;
+       right: 0;
+       width: 24px;
+       height: 24px;
+       background: #e1dede;
+       border-radius: 50%;
+       box-shadow: 15px 15px 0 rgb(115, 10, 160);
+}
+
+.navegation ul li.active a::after{
+       content: '';
+       position: absolute;
+       bottom: -24px;
+       right: 0;
+       width: 24px;
+       height: 24px;
+       background: #e1dede;
+       border-radius: 50%;
+       box-shadow: 15px -15px 0 rgb(115, 10, 160);
+}

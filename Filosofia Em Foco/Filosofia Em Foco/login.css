@@ -1,0 +1,129 @@
+*{
+       margin: 0;
+       padding: 0;
+       outline: 0;
+       box-sizing: border-box;
+       font-family: "Poppins", sans-serif;
+       font-size: 16px;
+       font-weight: 400;
+}
+
+.login{
+       height: 100vh;
+       background: linear-gradient(150deg, #5944e2, #5b6cec);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+
+.container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color: #fff;
+       padding: 32px;
+       border-radius: 16px;
+       box-shadow: 0 6px 12px 0;
+}
+
+.headline{
+       font-size: 30px;
+       font-weight: 600;
+       color: #000;
+}
+
+.form{
+       width: 256px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+       margin-top: 16px;
+}
+
+.input-email{
+       margin-bottom: 8px;
+       width: 100%;
+       padding: 8px 0 8px 32px;
+       border: 2px solid #000;
+       border-radius: 5px;
+}
+
+.input-password{
+       width: 100%;
+       padding: 8px 0 8px 32px;
+       border: 2px solid #000;
+       border-radius: 5px;
+}
+
+.label-email{
+       margin: 0 0 -12px 0;
+       color: #000;
+       font-weight: 600;
+}
+
+.label-password{
+       margin: 0 0 -12px 0;
+       color: #000;
+       font-weight: 600;
+}
+
+.form i{
+       color: #999999;
+       font-size: 20px;
+       transform: translatex(10px) translateY(28px);
+}
+
+.input-emai::placeholder{
+       font-size: 12px;
+       color: #999999;
+}
+
+.input-email:focus{
+       border: 1px solid #5944e2;
+}
+
+.input-password:focus{
+       border: 1px solid #5944e2;
+}
+
+.forgot{
+       color: #5944e2;
+       margin: 16px 0 16px 0;
+       cursor: pointer;
+       text-decoration: none;
+       padding: 5px;
+}
+
+.forgot:hover{
+       color: #000;
+       text-decoration: underline;
+}
+
+.button-submit{
+       width: 100%;
+       border-radius: 5px;
+       font-weight: 600;
+       background: #3535ff;
+       padding: 8px;
+       cursor: pointer;
+       border: none;
+}
+
+.button-submit:hover{
+       background-color: #2929c6;
+}
+
+.forgot2{
+       color: #5944e2;
+       margin: 16px 0 16px 0;
+       cursor: pointer;
+       text-decoration: none;
+}
+
+.forgot2:hover{
+       color: #000;
+       text-decoration: underline;
+}
+

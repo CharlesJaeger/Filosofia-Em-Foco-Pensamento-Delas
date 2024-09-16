@@ -110,7 +110,8 @@
        cursor: pointer;
        border: none;
        margin: 20px 0px;
-       align-items: start;
+       align-items: center;
+       justify-content: center;
        
 }
 

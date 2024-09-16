@@ -18,17 +18,17 @@ body{
 }
 
 .navegation{
-     position: relative;
-     height: 1000px;
+     position: fixed;
+     height: 900px;
      top: 0;
      left: 0;
      background-color: #e1dede; 
-     width: 200px;
+     width: 90px;
      box-shadow: 10px 0 0 rgb(115, 10, 160); 
      border-left: 10px solid #e1dede;
      overflow-x: hidden;
      transition: 0.5s;
-     padding: 100px;
+     padding: 10px;
 }
 
 .navegation:hover{
@@ -64,7 +64,7 @@ body{
        position: relative;
        display: block;
        min-width: 65px;
-       height: 65px;
+       height: 75px;
        text-align: center;
        line-height: 70px;
 }
